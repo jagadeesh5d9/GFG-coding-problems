@@ -1,0 +1,8 @@
+Step1:
+    initialize pre_max[] and suff_max[] 
+        ->These are used to find the maximum height in both left and right side
+
+Step2:
+    At i th position,
+        find the amount of water block stored using the formula
+            -> min(pre_max[i],suff_max[i])-height[i];
